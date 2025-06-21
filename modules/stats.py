@@ -21,8 +21,6 @@ ner_tagger = NewsNERTagger(NewsEmbedding())
 morph = pymorphy2.MorphAnalyzer()
 
 # Загружаем стоп-слова для nltk
-nltk.download("punkt")
-nltk.download("stopwords")
 
 
 # Лемматизация сущности с использованием pymorphy2

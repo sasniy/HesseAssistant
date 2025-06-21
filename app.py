@@ -1,10 +1,14 @@
 import os
+
+import nltk
 import streamlit as st
 from modules.analysis import analyze_book
 from modules.parser import extract_text
 
 os.environ["STREAMLIT_WATCHER_TYPE"] = "none"
-
+nltk.download("punkt")
+nltk.download("stopwords")
+nltk.download('punkt_tab')
 st.set_page_config(page_title="📘 Book Insight", layout="wide")
 
 st.title("📘 BookInsight: Анализ текста книги")
